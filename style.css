@@ -1,0 +1,141 @@
+*{
+    font-family: Roboto;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #303030;
+}
+.container{
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.container .tags{
+    background: #ffd800;
+    font-size: 20px;
+    padding: 1px 10px;
+    transform: translate(-50%,0);
+}
+.info{
+    font-size: 20px;
+    color: #fff;
+    width: 440px;
+    line-height: 1.7rem;
+    text-align: justify;
+}
+.info p:last-child{
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.info p:last-child #gCode{
+  color:#a2ee33;
+  margin-left: 10px;
+  border:1px solid rgb(106, 133, 71);
+  padding: 5px;
+  
+}
+
+.info .tooltiptext{
+    position: relative;
+    font-size: 16px;
+    margin-left: 10px;
+    background-color: #ffd800;
+    color: #000;
+    padding: 5px;
+    overflow: hidden;
+    z-index: 9999;
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -webkit-transition: opacity .5s ease-in-out;
+    
+}
+
+.info .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    transform: translate(0,-50%);
+    border-width: 12px;
+    border-style: solid;
+    border-color: transparent #ffd800 transparent transparent;
+  }
+
+.code{
+    padding-bottom: 15px;
+    border:2px solid #fff;
+    border-radius: 20px;
+    text-align: center;
+    color:#fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.code h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.code .inputText{
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    margin: 0px 3px;
+    
+}
+.code .inputText:focus-visible,.inputText:focus{
+    outline:2px solid #a2ee33;
+}
+.verifyBtn{
+    position: relative;
+}
+.verifyBtn button{
+     position: absolute;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    font-size: 28px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    padding: 7px;
+    background-color: #a2ee33;
+    color:rgb(23, 92, 15);
+    cursor: pointer;
+}
+.verifyBtn button:hover{
+    background-color: #567d1b;
+    color: #ffffff;
+    border:1px solid #a2ee33
+}
+.verifyBtn p{
+    position: relative;
+   }
+.verifyBtn p a{
+text-decoration: none;
+color:#fff;
+cursor: pointer;
+}
+
+.Shake {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20%{ transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }

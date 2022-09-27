@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Verification Code</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<span class="tags">#Js learning</span>
+			<div class="info">
+				<p id="txt">
+					This is an application showing how to make verification code
+					in Javascript, Try to type this auto generated code and
+					verify it.<span style="font-size: 16px; color: red"
+						>You can click to copy:</span
+					>
+				</p>
+				<p>
+					Your Code is:<span id="gCode"></span>
+					<span class="tooltiptext" id="toolTip">Cpoied!</span>
+				</p>
+			</div>
+			<div class="code">
+				<form action="">
+					<h2>Verification Code</h2>
+					<input type="text" name="" id="" class="inputText" />
+					<input type="text" name="" id="" class="inputText" />
+					<input type="text" name="" id="" class="inputText" />
+					<input type="text" name="" id="" class="inputText" />
+					<input type="text" name="" id="" class="inputText" />
+					<input type="text" name="" id="" class="inputText" />
+				</form>
+			</div>
+			<div class="verifyBtn">
+				<p class="rSend" onclick="newCode()">
+					<a href="#">Resend Code?</a>
+				</p>
+				<button onclick="verify()">SUBMIT</button>
+			</div>
+		</div>
+		<script src="main.js"></script>
+	</body>
+</html>
